@@ -5,9 +5,14 @@
 <title>BostonGFX</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="style.js"></script>
+
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -33,15 +38,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-bullseye w3-xxlarge"></i>
     <p>MISSION</p>
   </a>
-  <a href="#curriculum" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-book w3-xxlarge"></i>
-    <p>CURRICULUM</p>
-  </a>
   <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>TEAM</p>
   </a>
-  
+
+  <a href="#curriculum" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>CURRICULUM</p>
+  </a>
+
+  <a href="#showcase" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-tv w3-xxlarge"></i>
+    <p>SHOWCASE</p>
+  </a>
+
+
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
@@ -73,144 +85,240 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h2 class="w3-text-light-grey">Mission</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>
-      Our program, BostonGFX (GFX==Graphics for Everybody), in partnership with Black-in-XR, aims to equip learners with comprehensive skills in Computer Graphics and XR. We provide interactive learning experiences at UMass Boston, the 3rd most diverse university in the nation with many modest-income and first-generation students.
+      Our program, BostonGFX (GFX==Graphics for Everybody), in partnership with <a href = "https://www.blackinxr.org/" target = "_blank" class= "blackinXRPink">Black-in-XR</a>, aims to equip learners with comprehensive skills in Computer Graphics and XR. We provide interactive learning experiences at UMass Boston, the 3rd most diverse university in the nation with many modest-income and first-generation students.
+      Our curriculum comprises five hands-on, project-based courses instructing RT3D technologies and Unity.  In addition to Computer Graphics and Game Programming with the primary focus, we offer RT3D modules in Software Engineering, Visualization, and UI Design courses. 
     </p>
   </div>
 
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="curriculum">
-    <h2 class="w3-text-light-grey">Curriculum</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <a href="https://cs460.org" target="_blank"><img src="gfx/cs460.png" style="width:40%;"></a>
-        <a href="https://sites.google.com/site/fdurupinar/home/teaching/cs461/cs461-23?" target="_blank"><img src="gfx/cs461.png" style="width:40%; ">   </a>     
-      <!-- </div> -->
-
-      <!-- <div class="w3-half"> -->
-        <a href="https://sites.google.com/site/fdurupinar/home/teaching/cs615/cs615-22?" target="_blank"><img src="gfx/cs615.png" style="width:40%;"></a>
-        <a href="https://danielhaehn.com/cs410.net" target="_blank"><img src="gfx/cs410.png" style="width:40%;"></a>
-        <!-- <a href="https://sites.google.com/site/fdurupinar/home/teaching/cs461/cs461-23?" target="_blank"><img src="gfx/cs461.png" style="width:40%; ">   </a>      -->
-      </div>
-
-      <!-- <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div> -->
-  
-    </div>
-  </div>
 
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="team">
     <!-- Grid for photos -->
     <h2 class="w3-text-light-grey">Team</h2>
     <hr style="width:200px" class="w3-opacity">
     <h3 class="w3-padding-24 w3-text-light-grey">Organizers</h3>  
-
     <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
       <div class="w3-third w3-margin-bottom">
         <a href ="https://cs.umb.edu/~fundad" target="_blank"><img src="images/image4.png" style="width:100%" class="w3-hover-opacity"></a>
         <div class="w3-container w3-white">
-          <p><b>Funda Durupinar</b></p>
+          <p class="collapsible w3-button" ><b> Funda Durupinar</b></p>
+
           <!-- <p class="w3-opacity">Fri 27 Nov 2016</p> -->
-          <p>Funda is an Assistant Professor of Computer Science at UMass Boston. Her research is at the intersection of computer graphics, artificial intelligence, psychology, and applied perception with a focus on creating expressive, autonomous, and embodied virtual humans.  Funda teaches Game Programming, User Interface Design, and Artificial Intelligence. She is an active member of the community, serving on the editorial board of Virtual Reality Journal, editing a special issue of Frontiers in Virtual Reality, and organizing workshops and conferences such as ACM Symposium on Applied Perception (SAP’23).</p>
+          <!-- <button type="button" class="collapsible">Funda Durupinar</button> -->
+          
+          <div class="content">
+          <p>Funda is an Assistant Professor of Computer Science at UMass Boston. Her research is at the intersection of computer graphics, artificial intelligence, psychology, and applied perception with a focus on creating expressive, autonomous, and embodied virtual humans.  Funda teaches Game Programming, User Interface Design, and Artificial Intelligence. She is an active member of the computer graphics, VR, and applied perception community. </p>
+          </div>
           <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
         </div>
       </div>
       <div class="w3-third w3-margin-bottom">
       <a href = "https://danielhaehn.com/" target="_blank">  <img src="images/image10.png" style="width:100%" class="w3-hover-opacity"></a>
         <div class="w3-container w3-white">
-          <p><b>Daniel Haehn</b></p>
+          <p class="collapsible  w3-button"><b>Daniel Haehn</b></p>
+          <div class="content">
           <!-- <p class="w3-opacity">Sat 28 Nov 2016</p> -->
           <p>Daniel is an Assistant Professor of Computer Science at UMass Boston and an Associate of the Harvard Paulson School of Engineering and Applied Sciences. In 2012, Daniel created the first framework for web-based visualization of medical images (goXTK.org and SliceDrop.com). Since then, Daniel's research focuses on visualization and computer vision. He teaches Computer Graphics, Software Engineering, and Biomedical Imaging very applied with live coding sessions and hands-on delivery of concepts. All of his course materials are openly available and allow students of all levels to succeed.</p>
+          </div>
           <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
         </div>
       </div>
       <div class="w3-third w3-margin-bottom">
         <a href ="https://www.linkedin.com/in/jasmine-roberts" target="_blank"><img src="images/image11.png" style="width:100%" class="w3-hover-opacity"></a>
         <div class="w3-container w3-white">
-          <p><b>Jasmine Roberts</b></p>
+          <p class="collapsible  w3-button"><b>Jasmine Roberts</b></p>
+          <div class="content">
           <!-- <p class="w3-opacity">Sun 29 Nov 2016</p> -->
           <p>Jasmine Roberts is an engineer, researcher, and cognitive designer in virtual, augmented, and mixed reality. Currently, she is building generative A.I. creative tooling at Microsoft Research and planning to announce an XR startup. Jasmine has worked at PlayStation on PlayStation VR, Unity on Unity MARS, and at Google on ARCore. Jasmine has also been a member of collectives Oculus Launch Pad, Mozilla XR Studio and was honored in 2020 in Forbes Under 30 for Games. She founded Black in XR November 2021.</p>
+          </div>
           <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
         </div>
       </div>
     </div>
 
-    
-      <!-- <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div> -->
-  
+    <h3 class="w3-padding-24 w3-text-light-grey">Graduate Students</h3>  
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <a href ="https://www.linkedin.com/in/pablo-bendiksen-11b583127" target="_blank"><img src="images/image5.png" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p class="collapsible w3-button" ><b> Pablo Bendiksen</b></p>
+
+          <!-- <p class="w3-opacity">Fri 27 Nov 2016</p> -->
+          <!-- <button type="button" class="collapsible">Funda Durupinar</button> -->
+          
+          <div class="content">
+          <p>Pablo is a PhD Student at UMass Boston researching computer graphics and animation.  Pablo holds an MSin Applied Statistics from Boston College.  He has  BS degrees in Biology, Chemistry, and Psychology, all with cum laude status, from Texas State University. He worked as an Education Data Analyst at Innovations in Urban Science Education (iUSE)  and a Business Analyst Intern at EBO Global Innovation Capital, LLC. Pablo is a Teaching Assistant for CS615 User Interface Design and CS670 Artificial Intelligence.</p>
+          </div>
+          <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+      <a href = "https://ir.linkedin.com/in/mahsa-geshvadi-13233a124" target="_blank">  <img src="images/image8.png" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p class="collapsible  w3-button"><b>Mahsa Geshvadi</b></p>
+          <div class="content">
+          <!-- <p class="w3-opacity">Sat 28 Nov 2016</p> -->
+          <p>Mahsa is a PhD Student at UMass Boston researching computer graphics and visualization perception. Before joining UMass Boston, Mahsa worked as a data scientist in Iran. She also worked as a game developer with the Unity platform on The Blurry Island, a game exploring AI technology and ethics. She received her BS in Computer Engineering from Amirkabir University of Technology in Iran. Mahsa is also the Teaching Assistant for CS460 Graphics.</p>
+          </div>
+          <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+        </div>
+      </div>      
     </div>
 
-    
-    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button> -->
-    
-    <!-- Grid for pricing tables
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div> -->
 
-      <!-- <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div> -->
-    <!-- End Grid/Pricing tables -->
+    
+    <h3 class="w3-padding-24 w3-text-light-grey">Confirmed Experts</h3>  
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <a href ="https://www.linkedin.com/in/allyssaalewis" target="_blank"><img src="images/image6.jpg" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p class="collapsible  w3-button"><b>Allyssa A Lewis</b></p>
+
+          <!-- <p class="w3-opacity">Fri 27 Nov 2016</p> -->
+          <!-- <button type="button" class="collapsible">Funda Durupinar</button> -->
+          
+          <div class="content">
+          <p>Allyssa is a Creative Strategist, Recruiter, Career Consultant, and prime-time television EMMY® winning Animator most noted for her animation on over 75 episodes and promos of FX's series "Archer". She also has created content for NBC's "30 Rock", Discovery Channel, Mtv, i am OTHER, Animation Domination, Apple, ComicCon San Diego, Georgia Public Broadcasting (PBS), and Captain Planet's Planeteer Movement. In 2015, Allyssa founded Georgia's first and largest animation resource and staffing agency, My Animation Life (MAL). The team works to find creative strategies and solutions for both studios and independents. Creating Georgia's most inclusive animation map, calendar, and classified listing are just a few of the popular assets MAL provides to strengthen Georgia's animation industry.</p>
+          </div>
+          <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+      <a href = "https://www.linkedin.com/in/dan-ginsburg-06ab4b" target="_blank">  <img src="images/image9.png" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p class="collapsible  w3-button"><b>Dan Ginsburg</b></p>
+          <div class="content">
+          <!-- <p class="w3-opacity">Sat 28 Nov 2016</p> -->
+          <p>Dan is the founder of Upsample Software, LLC, a software company offering consulting services with a specialization in 3D Graphics and GPU Computing. Dan is also a big fan of cross-platform development and open standards including Vulkan, OpenGL, Qt, and Linux. He co-authored the "OpenGL ES 3.0 Programming Guide, "OpenGL ES 2.0 Programming Guide", "OpenCL Programming Guide" and also contributed to "OpenGL Shading Language: 3rd Edition". As consultant for Valve, Dan worked on popular games such as Half-Life Alyx, Dota Underlords, SteamVR, Dora 2, and many others.</p>
+          </div>
+          <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <a href ="https://scholar.harvard.edu/sfrisken/home" target="_blank"><img src="images/image1.png" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p class="collapsible  w3-button"><b>Sarah Frisken</b></p>
+          <div class="content">
+          <!-- <p class="w3-opacity">Sun 29 Nov 2016</p> -->
+          <p> Sarah is Assistant Professor of Radiology at Harvard Medical School and Brigham and Women’s Hospital. Her work at BWH focuses on developing new methods and technologies to improve precision in image-guided neurosurgery. Before joining BWH, Sarah successfully sold her software startup company, 61 Solutions, Inc., which created drawing software for professional artists. Prior to founding 61 Solutions, she was a consultant to Disney Research and Mitsubishi Electric Research Laboratory (MERL), a Professor in Computer Science at Tufts University and a Distinguished Research Scientist and Advisor to Management at MERL. She held postdoctoral positions at MIT and CMU, has a PhD in Electrical Engineering from CMU, an MSc in Biomedical Engineering from U. Wisconsin, Madison, and a BSc in Mathematics and Engineering from Queens University, Canada.</p>
+          </div>
+          <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+        </div>
+      </div>
+
+
+      <div class="w3-third w3-margin-bottom">
+        <a href ="https://www.linkedin.com/in/jasmine-roberts" target="_blank"><img src="images/image2.png" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p class="collapsible  w3-button"><b>Felix Gonda</b></p>
+          <div class="content">
+          <!-- <p class="w3-opacity">Sun 29 Nov 2016</p> -->
+          <p>Felix is CEO of Allumique, a graphics and vision-based startup. Prior to completing his PhD at Harvard University, Felix worked as a game developer at Electronic Arts and contributed to Red Alert 3, Boom Blox, Medal of Honor, Medal of Honor Vanguard, Fifa 2015, Madden NFL 2014 and 2015. Felix also worked at Disney Interactive on the Epic Mickey II game and as a Software Design Engineer at Microsoft.</p>
+          </div>
+          <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <a href ="https://ca.linkedin.com/in/hdtaskiran" target="_blank"><img src="images/image7.png" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p class="collapsible  w3-button"><b>Dogu Taskiran</b></p>
+          <div class="content">
+          <!-- <p class="w3-opacity">Sun 29 Nov 2016</p> -->
+          <p>Dogu is CEO of Orderinbox, OIX, a revolutionary social commerce platform and NFT marketplace for the age of Metaverse. Prior to OIX, Dogu co-founded Stambol Studios,  creative technology studio specializing in hyper-realistic immersive experiences and interactive applications through VR/AR. He co-founded Locopass, an end-to-end location-based content creation and delivery platform for small and medium scale businesses. Dogu also worked at Electronic arts,  Microsoft, and Ubisoft, as a Software Engineer.</p>
+          </div>
+          <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <a href ="https://margonzalezfranco.github.io/" target="_blank"><img src="images/image3.png" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p class="collapsible  w3-button"><b> Mar Gonzalez-Franco</b></p>
+          <div class="content">
+          <!-- <p class="w3-opacity">Sun 29 Nov 2016</p> -->
+          <p> Mar is a Research Manager at Google creating a new generation of Immersive technologies. She leads the BIRD lab creating blended interactions in XR, that perhaps aim to bring more of the real into the virtual and bridge better 2D and 3D. Her team of special ops explores multi-device futures and ML enabled novel experiences.  Before joining Google, she was a Principal Researcher in the EPIC (Extended Perception Interaction and Cognition) team at Microsoft Research. She created and led the Immersive Technologies lab in the UK to research AR, VR, HMDs and Mixed Reality in the context of aeronautic manufacturing. She worked as a Postdoctoral scholar at the Virtual Environments and Computer Graphics group, in the University College London. Mar received her PhD and MS degrees from the Universitat de Barcelona in Immersive Virtual Reality and Clinical Psychology. She was also affiliated as a visiting student at the Massachusetts Institute of Technology, MediaLab.</p>
+          </div>
+          <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+        </div>
+      </div>
     </div>
-    
-    <!-- Testimonials -->
-    <!-- <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-  <!-- End About Section -->
+
   </div>
-   -->
-  <!-- Portfolio Section -->
-  <!-- <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
 
-  <!-- End Portfolio Section -->
-  <!-- </div> --> -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="curriculum">
+    <h2 class="w3-text-light-grey">Curriculum</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px;">
+      <!-- <div class="w3-half"> -->
+        <a href="https://cs460.org" target="_blank"><img src="gfx/cs460.png" style="width:22%; margin:10px;" class="w3-hover-opacity"></a>
+        <a href="https://danielhaehn.com/cs410.net" target="_blank"><img src="gfx/cs410.png" style="width:22%;margin:10px;" class="w3-hover-opacity"></a>        
+        <a href="https://sites.google.com/site/fdurupinar/home/teaching/cs461/cs461-23?" target="_blank"><img src="gfx/cs461.png" style="width:22%; margin:10px;" class="w3-hover-opacity"></a>     
+        <a href="https://sites.google.com/site/fdurupinar/home/teaching/cs615/cs615-22?" target="_blank"><img src="gfx/cs615.png" style="width:22%;margin:10px;" class="w3-hover-opacity"></a>
+        
+    </div>
+  </div>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="showcase">
+    <h2 class="w3-text-light-grey">Student Project Showcase</h2>
+    <hr style="width:200px" class="w3-opacity">
+    
+    <h3 class="w3-padding-24 w3-text-light-grey">CS 460 - Computer Graphics</h3>  
+
+        <table>
+          <tr>
+            <td>
+        <iframe width ="100%" src="https://www.youtube.com/embed/j9oeOGMiXSs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+      <td>
+        <iframe  width ="100%" src="https://www.youtube.com/embed/52TD1RUPNCs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+      </tr>
+      <tr>
+  <td>
+        <iframe  width ="100%"src="https://www.youtube.com/embed/oEbEiJsCMxs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+        <td>
+        <iframe width ="100%" src="https://www.youtube.com/embed/Jxv2-yElxOY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+      </tr>
+      </table>
+      
+    <h3 class="w3-padding-24 w3-text-light-grey">CS 461 - Game Programming</h3>  
+    <table>
+      <tr>
+        <td>
+        <iframe width="100%" frameborder="0" src="https://tung-duong.com/LeagueOfGuardians/"> Play League of Guardians by Tung Duong</a></iframe>
+        </td>
+        <td>
+      <iframe width="100%" frameborder="0" src="https://itch.io/embed/2077517" ><a href="https://udaya.itch.io/castle-chase">Play Castle Chase by Udaya Sathiyamoorthy</a></iframe>
+    </td>
+    </tr>
+      
+      <tr>
+      <td>
+        <iframe width="100%" src="https://www.youtube.com/embed/wCifUZ8DMVg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+        <td>
+        <iframe width="100%" src="https://www.youtube.com/embed/Fqo5IINi-cA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+    </tr>
+    <tr>
+        <td>
+        <iframe width="100%"  src="https://www.youtube.com/embed/2dfySnW92Kw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+        <td>
+        <iframe width="100%"  src="https://www.youtube.com/embed/S_kkBAlrQPY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+    </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -218,23 +326,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> University of Massachusetts Boston,  US</p>
+      <p><a href="https://www.cs.umb.edu/contact-us"target="_blank"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>University of Massachusetts Boston,  US</p>
       <!-- <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: team@bostongfx.com</p>
+     
+      <p><a href="mailto:team@bostongfx.com" target="_blank"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>Email: team@bostongfx.com</p>
     </div><br>
-    <p>Send us a message:</p>
+    <!-- <p>Send us a message:</p> -->
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+    <!-- <form action="/action_page.php" target="_blank"> -->
+      <!-- <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p> -->
+      <!-- <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
+          <i class="fa fa-paper-plane"></i> <a href="mailto:team@bostongfx.com" target="_blank">SEND MESSAGE</a>
+
+          <!-- <a href="mailto:team@bostongfx.com" style='text-decoration: none; color:white'><span id='contact'>Please email us for any questions!<br><br></span></a> -->
+
+        <!-- </button> -->
+      <!-- </p> --> 
+    <!-- </form> -->
   <!-- End Contact Section -->
   </div>
   
@@ -243,12 +355,30 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-github w3-hover-opacity"></i>    
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <!-- End footer -->
   </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
 
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
 </body>
 </html>
+
