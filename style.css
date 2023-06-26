@@ -39,6 +39,11 @@
 .blackinXRPink{
     color: rgb(215, 165, 214);
 }
+
+.createAccessGreen{
+  color: rgb(148, 200, 171);
+}
+
 table, th, td {
     /* border: 1px solid black; */
     border-collapse: collapse;
